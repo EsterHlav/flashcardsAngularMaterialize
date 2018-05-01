@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-body">
+
+    <h1 class="card-title">{{ photo.namecity }}</h1>
+
+    <img  class="card-img-top"
+          [src]="photo.displayurl"
+          aria-controls="active"
+          style="max-height:500px;max-width:500px;">
+
+    <h3 class="card-text">{{ photo.titlearticle }}</h3>
+    <h5 class="card-text">Region: {{photo.region}} | Population: {{photo.population}}</h5>
+    <p>{{ photo.article }}</p>
+  </div>
+</div>

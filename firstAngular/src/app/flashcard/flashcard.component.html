@@ -1,0 +1,14 @@
+<div class="col s12 m4 flashcard">
+  <div class="card">
+    <div class="card-image"  style="max-height: 100px">
+      <img [src]="flashcard.displayurl">
+    </div>
+    <div class="card-tabs quizz">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a [attr.class]="flashcard.true==1 ? true : undefined"> {{flashcard.op1}} </a></li>
+        <li class="tab"><a [attr.class]="flashcard.true==2 ? true : undefined"> {{flashcard.op2}} </a></li>
+        <li class="tab"><a [attr.class]="flashcard.true==3 ? true : undefined"> {{flashcard.op3}} </a></li>
+      </ul>
+    </div>
+  </div>
+</div>

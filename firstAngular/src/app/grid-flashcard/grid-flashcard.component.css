@@ -1,0 +1,191 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #4ec3f7;
+}
+
+.parallax-container {
+  min-height: 500px;
+  max-height: 700px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+    text-shadow: 0.3px 0.3px 1px rgba(0,0,0,0.2);
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .brand-logo img {
+    height:45px !important;
+    margin-top:5px !important;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 130%; /* or a little bit higher */
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    /*max-height: 130%; /* or higher percentages. It's up to your taste */
+    height:auto!important;
+    width:100%!important;
+  }
+  .btn-small {
+    font-size: 12px !important;
+  }
+  .nav-wrapper {
+    width: 90%;
+  }
+  .brand-logo img {
+    height:55px !important;
+    margin-top:5px !important;
+  }
+}
+
+.sidenav-overlay {
+  z-index: 996;
+}
+
+.listitems img{
+  height: 60px !important;
+  width: 60px !important;
+}
+
+.listitems span {
+  line-height: 4rem;
+  margin-left: 18px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.slider {
+  height: 540px !important;
+}
+
+.slides {
+  height: 500px !important;
+}
+
+/*from https://github.com/Dogfalo/materialize/issues/3814*/
+.slovak .card.medium{
+  height: 50% !important;
+}
+
+.slovak .card-image{
+    max-height:80% !important; /*// Also this should be 100%.*/
+    height:250px !important; /*// corresponds to box height*/
+}
+
+.slovak .card-image img {
+  height:200px !important;
+} /*// corresponds to image height*/
+
+.tabs .tab{
+  width: 33.33%
+}
+
+.tabs.banner .indicator {
+  height: 4px;
+}
+
+.flashcard .card.medium{
+  height: 300px !important;
+}
+
+.flashcard .card-image{
+    max-height:40% !important; /*// Also this should be 100%.*/
+
+}
+
+.flashcard img{
+  height: 250px !important;
+  object-fit: cover !important;
+} /*// corresponds to image height*/
+
+.flashcard .card-action{
+    max-height: 50% !important; /*// Also this should be 100%.*/
+}
+
+.flashcard .card-action p {
+  margin: 0;
+  color: #ffab40;
+  margin-right: 24px;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+  text-transform: uppercase;
+}
+.flashcard .card-content {
+    height: 0px !important;
+    padding: 0px !important;
+}
+
+.flashcard .centeredTitle{
+  padding: 70px 0 70px 0 !important;
+  font-size: 35px;
+  margin-left: 15px;
+}
+
+.flashcard .centeredTitle i{
+  color: white;
+  line-height: 40px;
+}
+
+.card-tabs.quizz .init {
+  background-color: transparent !important;
+}
+
+.card-tabs.quizz .tab.clicked .active {
+  background-color: #ff5252 !important;
+  color: white !important;
+}
+
+.card-tabs.quizz .tab a{
+  font-size: 12px;
+}
+
+.card-tabs.quizz .clicked .active.true{
+  background-color: #00c853 !important;
+  color: white !important;
+}
+
+.card-tabs.quizz .tab .active {
+  color: rgba(238, 110, 115, 0.7) !important;
+}

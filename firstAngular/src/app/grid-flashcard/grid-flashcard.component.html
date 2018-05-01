@@ -1,0 +1,13 @@
+<div style='margin-left: 50px;margin-right: 50px'>
+  <div class="row flashcard" style="display:block" *ngFor='let i of rg'>
+    <app-flashcard
+      [flashcard]="Listflashcard[3*i]">
+    </app-flashcard>
+    <app-flashcard
+      [flashcard]="Listflashcard[3*i+1]">
+    </app-flashcard>
+    <app-flashcard
+      [flashcard]="Listflashcard[3*i+2]">
+    </app-flashcard>
+  </div>
+</div>
